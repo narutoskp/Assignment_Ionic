@@ -1,0 +1,25 @@
+<ion-view ng-controller="locatCtrl">
+<br><br>
+<div class="list list-inset">
+  <label class="item item-input">
+  	<span class="input-label">Latitude</span>
+    <input type="text" placeholder="Input Latitude" ng-model="item.lat">
+  </label>
+  <label class="item item-input">
+  	<span class="input-label">Longitude</span>
+    <input type="text" placeholder="Input Longitude" ng-model="item.lng">
+  </label>
+  <button class="button button-block button-balanced" ng-click="onClicked(item.lat, item.lng)">
+  	<!-- <ion-item ng-repeat="item in items" ng-click="onClicked(item.lat, item.lng)"> -->
+  		Submit
+  	</ion-item>
+  </button>
+</div>
+  
+<!--   <ion-list>
+  <br><br>
+  	<ion-item ng-repeat="item in items" ng-click="onClicked(item.lat, item.lng)">
+    	{{item.lat}} {{item.lng}}
+    </ion-item>
+  </ion-list> -->
+</ion-view>
